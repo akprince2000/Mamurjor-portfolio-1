@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.main-wrapper {
+    /*! margin-top: 5%; */
+}
+
+.wrapper {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header-area {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-area-logo a {
+    text-decoration: none;
+}
+
+.header-area-logo {
+    padding: 20px 0px;
+}
+
+.header-area-logo img {
+    width: 103px;
+    height: 20px;
+}
+
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    padding: 9px 19px;
+    margin: 10px 5px;
+}
+
+
+nav ul a:hover {
+    color: white;
+    background: black;
+    transition-duration:1s;
+}
+
+.main-section {
+    width: 100%;
+}
+
+.main-section-left {
+    width: 40%;
+    height: 422px;
+    float: left;
+}
+
+.main-section-left img {
+    width: 430px;
+    height: 520px;
+}
+
+.main-section-right {
+    width: 60%;
+    height: 422px;
+    float: left;
+}
+
+.main-section-right-content h3 {
+    padding-top: 145px;
+    font-size: 55px;
+    color: #333333;
+    /* font-family: 'Bitter', serif; */
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 25px;
+}
+
+.main-section-right-content hr {
+    width: 60px;
+    height: 4px;
+    border: none;
+    background: black;
+    margin-bottom: 25px;
+}
+
+.main-section-right-content p {
+    font-size: 25px;
+    color: #7d7789;
+}
+
+.main-section-right-content p span {
+    color: #333;
+}
+
+.main-section-btn a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background-color: #333;
+    padding: 13px 38px;
+    border: 2px solid #333;
+    font-family: poppins;
+    font-weight: 500;
+    margin: 25px 0;
+
+    transition: all .3s ease;
+}
+
+.main-section-btn a:hover {
+    color: black;
+    border: 3px solid black;
+    background: white;
+    cursor: pointer;
+}
+
+#about {
+    margin-top: 10%;
+    float: left;
+    width: 100%;
+    height: 20px;
+}
+
+.about-title {
+    display: flex;
+}
+
+.about-title-left {
+    width: 15%;
+    float: left;
+}
+
+.about-title-left span {
+    letter-spacing: 7px;
+}
+
+.about-title-right {
+    width: 85%;
+    float: left;
+    padding-top: 10px;
+    color: black;
+    border: none;
+}
+
+/* about-content */
+
+#about-content {
+    width: 100%;
+    /* float: left; */
+    display: flex;
+    height: 200px;
+    padding-bottom: 19;
+}
+
+.about-content-left {
+    width: 50%;
+    height: 200px;
+}
+
+.about-content-left p {
+    width: 80%;
+    padding-top: 25px;
+    color: #8C8798;
+    font-size: 18px;
+}
+
+.about-content-right {
+    width: 50%;
+    height: 200px;
+    /* float: left; */
+}
+
+.about-content-right ul {
+    list-style-type: none;
+}
+
+.about-content-right ul li {
+    margin: 0 0 8px;
+    /* width: 100%; */
+    float: left;
+}
+
+.about-content-right ul li span {
+    float: left;
+}
+
+.about-content-right-left {
+    width: 30%;
+    height: 200px;
+    float: left;
+}
+
+.about-content-right-left p {
+    padding-top: 15px;
+    font-weight: 700;
+}
+
+.about-content-right-right {
+    width: 70%;
+    height: 200px;
+    float: left;
+}
+
+.about-content-right-right p {
+    padding-top: 15px;
+    color: #8C8798;
+}
+
+/* services-section */
+
+.services-section {
+    width: 100%;
+    float: left;
+}
+
+.services-section-left {
+    width: 50%;
+    height: 360px;
+    float: left;
+}
+
+.services-section-right {
+    width: 50%;
+    height: 360px;
+    float: left;
+}
+
+
+
+
+/* -----Same coad Copy-------- */
+
+#services {
+    margin-top: 10%;
+    float: left;
+    width: 100%;
+    height: 60px;
+}
+
+.services-title {
+    display: flex;
+}
+
+.services-title-left {
+    width: 35%;
+    float: left;
+}
+
+.services-title-left span {
+    letter-spacing: 7px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.services-title-right {
+    width: 60%;
+    float: left;
+    padding-top: 12px;
+    color: black;
+    border: none;
+}
+
+/* ------------------------ */
+
+.services-section-left-buttom {}
+
+.services-section-left-buttom ul {
+    list-style-type: none;
+}
+
+.services-section-left-buttom ul li {}
+
+.services-section-left-buttom ul li i {
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+
+
+/* Progress Bar */
+
+.progress{
+    width: 100%;
+    display: flex;
+}
+.progress-left{
+    width: 50%;
+    height: 200px;
+    background: rgb(29, 193, 235);
+}
+.progress-right{
+    width: 50%;
+    height: 200px;
+    background: rgb(63, 235, 29);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttom-marfin {
+    float: left;
+    padding-top: 10%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
