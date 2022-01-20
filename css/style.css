@@ -252,6 +252,7 @@ nav ul a:hover {
 
 .services-title {
     display: flex;
+    width: 100%;
 }
 
 .services-title-left {
@@ -275,13 +276,10 @@ nav ul a:hover {
 
 /* ------------------------ */
 
-.services-section-left-buttom {}
 
 .services-section-left-buttom ul {
     list-style-type: none;
 }
-
-.services-section-left-buttom ul li {}
 
 .services-section-left-buttom ul li i {
     padding-right: 15px;
@@ -290,7 +288,7 @@ nav ul a:hover {
 
 
 
-/* Progress Bar */
+/* Line Progress Bar */
 
 .progress{
     width: 100%;
@@ -306,6 +304,125 @@ nav ul a:hover {
     height: 200px;
     background: rgb(63, 235, 29);
 }
+
+
+.progress-left-content{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+.skills-bar{
+    width: 100%;
+    /*! background: #fff; */
+    border-radius: 10px;
+    padding: 0px 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+}
+
+.skills-bar .bar{
+    margin: 20px 0;
+}
+.skills-bar .bar:first-child{
+    margin-top: 0px;
+}
+.skills-bar .bar .info{
+    margin-bottom: 5px;
+}
+.skills-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background: #f0f0f0;
+    /*! box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                     0px 1px rgba(255,255,255,0.8); */
+}
+
+.bar .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background: #7d7789;
+    border-radius: 10px;
+}
+.bar .progress-line.html span{
+    width: 95%;
+}
+.bar .progress-line.javaScript span{
+    width: 80%;
+}
+.bar .progress-line.wordpress span{
+    width: 90%;
+}
+
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    /*! border:7px solid transparent; */
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+.bar .progress-line span::after{
+    position: absolute;
+    /* content: ""; */
+    right: 0;
+    top: -28px;
+    color: #7d7789;
+    font-size: 20px;
+    font-weight: 500;
+    /*! background: #000; */
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+.bar .progress-line.html span::after{
+    content: "95%";
+}
+.bar .progress-line.javaScript span::after{
+    content: "80%";
+}
+.bar .progress-line.wordpress span::after{
+    content: "90%";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
