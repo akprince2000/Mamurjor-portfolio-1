@@ -4,11 +4,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-.main-wrapper {
-    /*! margin-top: 5%; */
-}
-
 .wrapper {
     width: 1200px;
     height: auto;
@@ -116,7 +111,6 @@ nav ul a:hover {
     font-family: poppins;
     font-weight: 500;
     margin: 25px 0;
-
     transition: all .3s ease;
 }
 
@@ -159,7 +153,6 @@ nav ul a:hover {
 
 #about-content {
     width: 100%;
-    /* float: left; */
     display: flex;
     height: 200px;
     padding-bottom: 19;
@@ -180,7 +173,6 @@ nav ul a:hover {
 .about-content-right {
     width: 50%;
     height: 200px;
-    /* float: left; */
 }
 
 .about-content-right ul {
@@ -189,7 +181,6 @@ nav ul a:hover {
 
 .about-content-right ul li {
     margin: 0 0 8px;
-    /* width: 100%; */
     float: left;
 }
 
@@ -253,6 +244,7 @@ nav ul a:hover {
 .services-title {
     display: flex;
     width: 100%;
+    margin-bottom: 4%;
 }
 
 .services-title-left {
@@ -267,7 +259,7 @@ nav ul a:hover {
 }
 
 .services-title-right {
-    width: 60%;
+    width: 54%;
     float: left;
     padding-top: 12px;
     color: black;
@@ -297,27 +289,24 @@ nav ul a:hover {
 .progress-left{
     width: 50%;
     height: 200px;
-    background: rgb(29, 193, 235);
 }
 .progress-right{
     width: 50%;
     height: 200px;
-    background: rgb(63, 235, 29);
 }
 
 
 .progress-left-content{
-    display: grid;
+    /*! display: grid; */
     height: 100%;
     place-items: center;
 }
 
 .skills-bar{
-    width: 100%;
-    /*! background: #fff; */
+    width: 180%;
     border-radius: 10px;
-    padding: 0px 5px;
     box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+    margin-top: 20px;
 }
 
 .skills-bar .bar{
@@ -338,8 +327,7 @@ nav ul a:hover {
     height: 5px;
     width: 100%;
     background: #f0f0f0;
-    /*! box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
-                     0px 1px rgba(255,255,255,0.8); */
+    
 }
 
 .bar .progress-line span{
@@ -366,20 +354,17 @@ nav ul a:hover {
     top: -10px;
     height: 0;
     width: 0;
-    /*! border:7px solid transparent; */
     border-bottom-width: 0px;
     border-right-width: 0px;
     border-top-color: #000;
 }
 .bar .progress-line span::after{
     position: absolute;
-    /* content: ""; */
     right: 0;
     top: -28px;
     color: #7d7789;
     font-size: 20px;
     font-weight: 500;
-    /*! background: #000; */
     padding: 1px 8px;
     border-radius: 3px;
 }
@@ -394,61 +379,91 @@ nav ul a:hover {
 }
 
 
+/* Circular Progress Bar */
+
+.progress-right{
+    width: 50%;
+    height: 200px;  
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.buttom-marfin {
+.progress-left{
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.skill{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    align-self: self-end;
+    margin-left: 10px;
     float: left;
-    padding-top: 10%;
-    margin-top: 15%;
-    margin-bottom: 10%;
+}
+
+.outer{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.34);
+    padding: 5px;
+}
+.outer h3 {
+    text-align: center;
+    padding-top: 20%;
+    color: #7d7789;
+  }
+.inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 8px 8px rgba(0,0,0,0.34);
+}
+
+#number{
+    font-weight: 600px;
+    color: #555;
+    font-size: 18px;
+}
+.education-section{
+    width: 100%;
+    height: 200px;
+    background: chartreuse;
+}
+
+
+/* Education Section */
+
+.education-all{
+    width: 100%;
+    float: left;
+}
+.education-all-top{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+.education-all-top-left{
+    width: 50%;
+    height: 40px;
+}
+.education-all-top-right{
+    width: 50%;
+    height: 40px;
+}
+
+.education-all-bottom-child{
+    display: grid;
+    grid-gap: 1cm;
+    grid-template-columns: 1fr 3fr 1fr 3fr;
+}
+
+.border-style{
+    border-left: 2px solid black;
+    padding-left: 10px;
+    position: relative;
 }
