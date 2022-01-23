@@ -701,6 +701,15 @@ nav a {
     float: right;
 }
 
+.footer-bottom{
+    margin-bottom: 5%;
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    width: 100%;
+}
 
-
-
+.footer-bottom-right a{
+    padding-left: 10px;
+    color: black;
+}
